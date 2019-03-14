@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let class_name = prompt("enter the class name:");
+    function validate_class(className) {
+        let regex = /^[CAP][0-9]{4}[GHIKLM]$/;
+        return regex.test(className)
+    }
+    alert(validate_class(class_name))
+</script>
+</body>
+</html>
